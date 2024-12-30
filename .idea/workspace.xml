@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1703e4ed-cbff-4445-bf66-789214e23fee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Web-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dodje/main/static/main/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dodje/main/static/main/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dodje/main/templates/main/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dodje/main/templates/main/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dodje/main/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="1703e4ed-cbff-4445-bf66-789214e23fee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +85,7 @@
       <workItem from="1735201785029" duration="3186000" />
       <workItem from="1735210061236" duration="5891000" />
       <workItem from="1735269863350" duration="1101000" />
-      <workItem from="1735537299054" duration="2181000" />
+      <workItem from="1735537299054" duration="2772000" />
     </task>
     <servers />
   </component>
