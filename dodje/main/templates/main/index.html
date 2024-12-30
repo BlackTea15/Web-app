@@ -1,0 +1,76 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Dodje{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <div class="main_pr">
+            <p>До входа в аккаунт ваши заметки временно сохраняются в файлах cookie, чтобы вы могли продолжить работу с ними на этом устройстве. Помните, что эти заметки не защищены учетной записью и могут быть утрачены при очистке данных браузера.</p>
+        </div>
+        <div class="main_switch">
+            <p>Светлый режим</p>
+            <button class="main_switch_ssv"></button>
+        </div>
+        <div class="main_note_add">
+            <div class="main_note_add_vash"></div>
+            <p class="main_note_xx">Ваши заметки</p>
+            <div class="main_note_line"></div>
+            <div class="main_note_line1"></div>
+            <button class="main_note_delete">Удалить</button>
+            <div id="notes">
+                {% for note in notes %}
+                    <div class="note">
+                        <h4>{{ note.title }}</h4>
+                        <p>{{ note.text }}</p>
+                    </div>
+                {% empty %}
+                    <p class="main_note_soz">Нет сохраненных заметок.</p>
+                {% endfor %}
+            </div>
+            <div class="main_note_new">
+                <p>Создать новую заметку</p>
+            </div>
+        </div>
+        <div class="main_nots_back">
+            <div class="main_nots_line"></div>
+            <div class="main_nots_line2"></div>
+            <form onsubmit="event.preventDefault(); addNote();">
+                {% csrf_token %}
+                <input id="title" type="text" placeholder="Название вашей заметки" class="form-control">
+                <textarea id="text" placeholder="Введите текст..." oninput="updateCharCount()" maxlength="2000" class="form-control2"></textarea>
+                <p class="main_nots_os">Осталось символов: <span id="char-count">2000</span> </p>
+            <button class="main_nots_new" type="submit">Создать</button>
+        </div>
+        <diV class="main_basement">
+            <div class="main_basement_tag"></div>
+                <p class="main_basement_nu">Использованные ссылки</p>
+                <p class="main_basement_num">
+                    Контакты:
+                    +996 550 268 915
+                    +996 702 117 420
+                </p>
+                <p class="main_basement_sc1">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+                        Политика конфиденциальности
+                    </a>
+                </p>
+                <p class="main_basement_sc2">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+                        Пользовательское соглашение
+                    </a>
+                </p>
+                <img src="{% static 'main/img/freepik.png' %}" alt="Freepik" class="main_basement_img1">
+                <img src="{% static 'main/img/iconfinder.png' %}" alt="Iconfinder" class="main_basement_img2">
+                <img src="{% static 'main/img/flaticon.png' %}" alt="Flaticon" class="main_basement_img3">
+                <img src="{% static 'main/img/figma.png' %}" alt="Figma" class="main_basement_img4">
+        </div>
+    </div>
+
+
+
+</main>
+
+{% endblock %}

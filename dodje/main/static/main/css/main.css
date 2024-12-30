@@ -1,0 +1,477 @@
+
+body {
+    background: #D9D9D9;
+}
+
+        /* Шапка*/
+header {
+    position: absolute; /*!* Или fixed, если нужно закрепить шапку *!*/
+    width: 100%; /*!* Ширина шапки подстраивается под ширину окна *!*/
+    height: 80px;
+    top: 0; /*!* Верхняя часть страницы *!*/
+    left: 0; /*!* Начинаем с левого края *!*/
+    background: #F5F5F5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*!* Добавляем тень для визуального разделения *!*/
+    display: flex; /*!* Используем flexbox для выравнивания содержимого *!*/
+}
+
+header img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 47px;
+    top: 15px;
+}
+
+header .logo__text {
+    position: relative;
+    width: 52px;
+    height: 34px;
+    margin-left: 100px;
+    top: 25px;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+header .entrance {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    left: 1150px;
+    top: 25px;
+    list-style: none;
+    background: #FFF200;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание текста */
+    justify-content: center; /* Горизонтальное выравнивание текста */
+}
+header .registration {
+    position: relative;
+    width: 120px;
+    height: 30px;
+    left: 1165px;
+    top: 25px;
+    list-style: none;
+    background: #FFF200;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание текста */
+    justify-content: center; /* Горизонтальное выравнивание текста */
+}
+/*header ul1:hover, ul2:hover{transform: scale(1.05); color: red;}*/
+        /*Конец шапки*/
+
+          /*Основа*/
+
+main .main_pr {
+    position:absolute;
+    width: 909px;
+    height: 48px;
+    margin-left: 310px;
+    top: 85px;
+    text-align: center;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: rgba(49, 48, 48, 0.7);
+}
+
+
+main .main_switch p {
+    /* Светлый режим */
+
+    position:absolute;
+    width: 100px;
+    height: 48px;
+    margin-left: 69px;
+    top: 79px;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #000000;
+}
+
+main .main_switch_ssv {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: 28px;
+    top: 89px;
+
+    border: 1px solid #000000;
+    border-radius: 40px;
+}
+
+
+main .main_note_add {
+    position: absolute;
+    width: 360px;
+    height: 820px;
+    left: 47px;
+    top: 190px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+main .main_note_xx {
+    position: absolute;
+    width: 181px;
+    height: 29px;
+    left: 90px;
+    top: 1px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFF200;
+    border-radius: 25px;
+}
+
+
+            /* Линии */
+main .main_note_line {
+    position: absolute;
+    width: 359px;
+    height: 0px;
+    left: 0px;
+    top: 60px;
+
+    border: 1px solid #000000;
+}
+main .main_note_line1 {
+    position: absolute;
+    width: 359px;
+    height: 0px;
+    left: 0px;
+    top: 760px;
+
+    border: 1px solid #000000;
+}
+
+
+main .main_note_delete {
+    position: absolute;
+    width: 68px;
+    height: 31px;
+    left: 260px;
+    top: 775px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background: #E04C4C;
+    border-radius: 20px;
+}
+
+
+main .main_note_new {
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    left: 70px;
+    top: 775px;
+    cursor: pointer;
+    background: #6FBAE9;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000000;
+}
+main .main_note_soz {
+    position: absolute;
+    left: 95px;
+    top: 370px;
+    color: rgba(49, 48, 48, 0.7);
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+            /*Поле заметки*/
+/* Rectangle 8 */
+main .main_nots_back {
+    position: absolute;
+    width: 906px;
+    height: 820px;
+    left: 500px;
+    top: 190px;
+
+    background: #FFFDFD;
+    border-radius: 20px;
+}
+main .main_nots_line {
+    position: absolute;
+    width: 905px;
+    height: 0px;
+    left: 0px;
+    top: 60px;
+
+    border: 1px solid #000000;
+}
+
+main .main_nots_line2 {
+    position: absolute;
+    width: 905px;
+    height: 0px;
+    left: 0px;
+    top: 760px;
+
+    border: 1px solid #000000;
+}
+
+main .main_nots_new {
+    position: absolute;
+    width: 133px;
+    height: 35px;
+    left: 750px;
+    top: 770px;
+    cursor: pointer;
+
+    background: #6FBAE9;
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+main .form-control {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 280px;
+    height: 39px;
+    left: 30px;
+    top: 773px;
+
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .form-control2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 850px;
+    height: 670px;
+    left: 30px;
+    top: 80px;
+    resize: none;
+    border: none;
+    overflow: auto; /* Позволяет прокручивать текст внутри */
+
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+main .form-control2 :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+main .main_nots_os {
+    position: absolute;
+    left: 730px;
+    top: 710px;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+main .note {
+    position: absolute;
+    width: 170px;
+    height: 130px;
+    left: 20px;
+    top: 264px;
+
+    background: #545454;
+    border-radius: 10px;
+}
+
+
+         /*Подвал*/
+main .main_basement_tag {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 1140px;
+
+    background: #313030;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /*!* Используем flexbox для выравнивания содержимого *!*/
+}
+
+
+                 /*IMG*/
+main .main_basement_img1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 352px;
+    top: 1155px;
+}
+main .main_basement_img2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 344px;
+    top: 1170px;
+}
+
+main .main_basement_img3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 426px;
+    top: 1171px;
+}
+
+main .main_basement_img4 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 493px;
+    top: 1176px;
+}
+
+main .main_basement_num {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 1390px;
+    top: 1126px;
+    white-space: pre-line;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #EFE7E7;
+}
+
+main .main_basement_nu {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    left: 363px;
+    top: 1130px;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+main .main_basement_sc1 {
+    position: absolute;
+    width: 236px;
+    height: 21px;
+    left: 20px;
+    top: 1140px;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #D2D2D2;
+    text-decoration-line: underline;
+}
+
+main .main_basement_sc2 {
+    position: absolute;
+    width: 228px;
+    height: 21px;
+    left: 20px;
+    top: 1170px;
+
+    font-family: 'Jockey One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #D2D2D2;
+    text-decoration-line: underline;
+}
+     /*Конец подвала*/
+
+        /*Конец основы*/
+
+
+
+
+
+
